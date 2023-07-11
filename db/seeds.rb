@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Message.destroy_all
+greetings = ['Hello', 'Hi', 'Hey', 'Jambo', 'Habari']
+greeting_objects = []
+
+greetings.each do |greeting|
+    greeting_objects << {greeting: "#{greeting} Ruby and React in one", created_at: Time.now, updated_at: Time.now}
+end
+
+Message.create!(greeting_objects)
