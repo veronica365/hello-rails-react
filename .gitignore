@@ -7,7 +7,8 @@
 # Ignore bundler config.
 /.env
 /.bundle
-/.yarn.lock
+/package-lock.json
+/yarn.lock
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
